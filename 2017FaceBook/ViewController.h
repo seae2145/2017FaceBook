@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<FBSDKLoginButtonDelegate>{
+    
+    NSMutableArray *FriendArrayLabel;
+    
+}
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageview;
+@property (weak, nonatomic) IBOutlet UILabel *NameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *EmailLabel;
+@property (weak, nonatomic) IBOutlet UILabel *FriendsLabel;
 
 @end
 
